@@ -8,6 +8,7 @@
     <title>Order</title>
 </head>
 <body>
+    <!-- order nav -->
     <nav id="order-nav">
         <div>
             <h1>Order Here!</h1>
@@ -23,156 +24,142 @@
         
     </nav>
     <hr>
-    <!-- size -->
+    <!-- end of nav -->
+    <!-- form start -->
     <form method="post"  action="https://www.stonecoldprofessor.com/pizza-order.php">
-        <section id="size-section">
-            <div id="size-header">
-               <h1>Please pick a size!</h1>
+        <!-- start for size -->
+        <div id="size">
+            <div id="grid-1">
+                <h1>Pick a size</h1>
             </div>
-            <div id="small">
-                <label for="size">sm</label>
-                <input name="size" type="radio" value="small"/>
+            <hr id="hr">
+            <div id="grid-2">
+                <div>
+                    <label for="size">Small</label>
+                    <input type="radio" name="size" value="Small"/>
+                </div>
+                <div>
+                    <label for="size">Medium</label>
+                    <input type="radio" name="size" value="Medium"/>
+                </div>
+                <div>
+                    <label for="size">Large</label>
+                    <input type="radio" name="size" value="Large"/>
+                </div>
+                <div>
+                    <label for="size">Xtra Large</label>
+                    <input type="radio" name="size" value="Xtra Large"/>
+                </div>
             </div>
-            <div id="medium">
-                <label for="size">md</label>
-                <input name="size" type="radio" value="medium"/>
+        </div>
+        <!-- end of size -->
+        <!-- start of toppings -->
+        <div id="toppings">
+            <div id="grid-1">
+                <h1>Toppings</h1>
             </div>
-            <div id="large">
-                <label for="size">lg</label>
-                <input name="size" type="radio" value="large"/>
+            <hr id="hr">
+            <div id="grid-3">
+                <div>
+                    <label for="toppings[]">Ham</label>
+                    <input type="checkbox" name="toppings[]" value="Ham"/>
+                </div>
+                <div>
+                    <label for="toppings[]">Pepperoni</label>
+                    <input type="checkbox" name="toppings[]" value="Pepperonit"/>
+                </div>
+                <div>
+                    <label for="toppings[]">Sasuage</label>
+                    <input type="checkbox" name="toppings[]" value="Sasuage"/>
+                </div>
+                <div>
+                    <label for="toppings[]">Anchovies</label>
+                    <input type="checkbox" name="toppings[]" value="Anchovies"/>
+                </div>
+                <div>
+                    <label for="toppings[]">Pineapples</label>
+                    <input type="checkbox" name="toppings[]" value="Pineapple"/>
+                </div>
+                <div>
+                    <label for="toppings[]">Peppers</label>
+                    <input type="checkbox" name="toppings[]" value="Peppers"/>
+                </div>
+                <div>
+                    <label for="toppings[]">Onions</label>
+                    <input type="checkbox" name="toppings[]" value="Onions"/>
+                </div>
             </div>
-            <div id="ex-large">
-                <label for="size">extra lg</label>
-                <input name="size" type="radio" value="extra large"/>
+
+        </div>
+        <!-- end of toppings -->
+        <!-- crust start -->
+        <div id="crust">
+            <div id="grid-1">
+                <h1>Pick Crust</h1>
             </div>
-        </section>
-        <!-- toppings -->
-        <section id="topping-section">
-            <div>
-                <h1>Please pick a topping!</h1>
-            </div>
-            <div>
-                <label for="toppings[]">pepperoni</label>
-                <input type="checkbox" name="toppings[]" value="pepperoni"/>
-            </div>
-            <div>
-                <label for="toppings[]">ham</label>
-                <input type="checkbox" name="toppings[]" value="ham"/>
-            </div>
-            <div>
-                <label for="toppings[]">anchovies</label>
-                <input type="checkbox" name="toppings[]" value="anchovies"/>
-            </div>
-            <div>
-                <label for="toppings[]">banana-peppers</label>
-                <input type="checkbox" name="toppings[]" value="banana peppers"/>
-            </div>
-            <div>
-                <label for="toppings[]">chicken</label>
-                <input type="checkbox" name="toppings[]" value="chicken"/>
-            </div>
-            <div>
-                <label for="toppings[]">sasuage</label>
-                <input type="checkbox" name="toppings[]" value="sasuage"/>
-            </div>
-            <div>
-                <label for="toppings[]">onions</label>
-                <input type="checkbox" name="toppings[]" value="onions" />
-            </div>
-            <div>
-                <label for="toppings[]">pineapple</label>
-                <input type="checkbox" name="toppings[]" value="pineapple"/>
-            </div>
-        </section>
-        <section id="crust-section">
-            <div>
-                <label for="crust"> Pick a crust</label>
-            </div>
-            <div>
-                <select name="crust" id="crust">
-                    <option  value="thin">Thin</option>
+            <hr id="hr">
+            <div id="grid-4">
+                <select>
+                    <option value="thin">Thin</option>
                     <option value="pan">pan</option>
-                    <option value="cheese">cheese</option>
                     <option value="thick">thick</option>
+                    <option value="cheese">cheese</option>
                 </select>
             </div>
-           
+        </div>
+        <!-- crust end -->
+        <!-- user details start -->
+        <div id="user">
+            <div id="grid-1">
+                <h1>Your Details!</h1>
+            </div>
+            <hr id="hr">
+            <div class="container">
+                <div class="details">
+                    <label for="first">First Name: </label>
+                    <input name="first" type="text"/>
+                </div>
+                <div class="details">
+                    <label for="last">Last Name: </label>
+                    <input name="last" type="text"/>
+                </div>
+                <div class="details">
+                    <label for="address">Address: </label>
+                    <input name="address" type="text"/>
+                </div>
+                <div class="details">
+                    <label for="city">City: </label>
+                    <input name="city" type="text"/>
+                </div>
+                <div class="details">
+                    <label for="state">State: </label>
+                    <input name="state" type="text"/>
+                </div>
+                <div class="details">
+                    <label for="zip">Zip: </label>
+                    <input name="zip" type="number"/>
+                </div>
+                <div class="details">
+                    <label for="email">Email: </label>
+                    <input name="email" type="email"/>
+                </div>
+                <div class="details">
+                    <label for="phone">phone: </label>
+                    <input name="phone" type="phone"/>
+                </div>
+                <div class="details">
+                    <label for="comments">comment: </label>
+                    <textarea name="comments" type="comments"></textarea>
+                </div>
+            </div>
             
-        </section>
-        <!-- Delivery address (street, city, state, zip)
-Email address
-Phone number
-Message/Comment -->
-<h1>Order Details</h1>
-<section id="first">
-    <div>
-        <h1>first:</h1>
-    </div>
-   <div>
-       <label for="first">first</label>
-       <input type="first" name="first"/>
-   </div>
-   <div>
-    <label for="last">last</label>
-    <input type="last" name="last"/>
-</div>
-</section>
-<section id="address">
-    <div>
-        <h1>Address</h1>
-    </div>
-    <div>
-        <label for="add1">street</label>
-        <input name="add1"/>
-    </div>
-    <div>
-        <label for="add2">street 2</label>
-        <input name="add2"/>
-    </div>
-   <div>
-    <label for="city">city</label>
-    <input name="city"/>
-</div>
-<div>
-    <label for="state">state</label>
-    <input name="state"/>
-</div>
-<div>
-    <label for="zip">zip</label>
-    <input name="zip"/>
-</div>
-
-</section>
-<section id="email">
-    <div>
-        <h1>Email:</h1>
-    </div>
-   <div>
-       <label for="email">email</label>
-       <input type="email" name="email"/>
-   </div>
-</section>
-<section id="number">
-    <div>
-        <h1>number:</h1>
-    </div>
-   <div>
-       <label for="phone">phone</label>
-       <input type="phone" name="phone"/>
-   </div>
-</section>
-<section id="message">
-    <div>
-        <h1>message:</h1>
-    </div>
-   <div>
-       <label for="comments">comments</label>
-       <textarea type="comments" name="comments"></textarea>
-   </div>
-</section>
-<button type="submit">Submit!</button>
-<button type="reset">Clear</button>
-    </form>
+        </div>
+        <div class="btn">
+            <button type="submit">Submit</button>
+            <button type="clear">Clear</button>
+        </div>
+       
+    </form> 
   
 </body>
 </html>

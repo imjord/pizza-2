@@ -77,145 +77,174 @@ body {
 
 /* END OF ORDER NAV */
 
-
-/* size MAIN SECTION START */
-#size-section {
-    font-family: 'Poppins', sans-serif;
-    display: grid;
-  grid-template-columns: repeat(5, auto);
-  gap: 10px;
-  margin-top: 50px;
-  grid-auto-rows: minmax(100px, auto);
-}
-
-#size-section div:nth-child(1){
-    justify-self: center;
-    align-self: center;
-    font-size: 30px;
-    grid-column: 1 / 6;
-    border: 2px soild red;
-
-}
-
-#size-section div:nth-child(2){
-    justify-self: center;
-    align-self: center;
-    border: 2px soild red;
-    font-size: 25px;
- 
-}
-#size-section div:nth-child(3){
-    justify-self: center;
-    font-size: 25px;
-    align-self: center;
-   
-}
-#size-section div:nth-child(4){
-    justify-self: center;
-    align-self: center;
-    font-size: 25px;
-    
-   
-}
-#size-section div:nth-child(5){
-    justify-self: center;
-    align-self: center;
-    font-size: 25px;
-    
-   
-}
-
-#size-header {
-    font-size: 40px;
-}
-
 hr{
     border: 5px solid red;
 }
-/* end of sizes */
-/* toppings */
 
-#topping-section {
-    font-family: 'Poppins', sans-serif;
+/* size grid */
+
+#size {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+#grid-1 {
     display: grid;
-  grid-template-columns: repeat(9, auto);
-  gap: 10px;
-  margin-top: 50px;
-  grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(1, 100%);
+   margin-top: 50px;
+    
 }
 
-#topping-section div:nth-child(1){
-    font-size: 25px;
- align-self: center;
- justify-self: center;
- font-size: 30px;
- grid-column: 1 / 10;
-}
-#topping-section div:nth-child(2){
+#grid-1 h1 {
+    justify-self: center;
     align-self: center;
- justify-self: center;
- font-size: 25px;
-}
-#topping-section div:nth-child(3){
-    align-self: center;
- justify-self: center;
- font-size: 25px;
-}
-#topping-section div:nth-child(4){
-    align-self: center;
- justify-self: center;
- font-size: 25px;
-}
-#topping-section div:nth-child(5){
-    align-self: center;
- justify-self: center;
- font-size: 25px;
-}
-#topping-section div:nth-child(6){
-    align-self: center;
- justify-self: center;
- font-size: 25px;
-}
-#topping-section div:nth-child(7){
-    align-self: center;
- justify-self: center;
- font-size: 25px;
-}
-#topping-section div:nth-child(8){
-    align-self: center;
- justify-self: center;
- font-size: 25px;
-}
-#topping-section div:nth-child(9){
-    align-self: center;
- justify-self: center;
- font-size: 25px;
 }
 
-/* end of toppings */
-/* crust sizes start*/
 
-#crust-section {
-    font-family: 'Poppins', sans-serif;
+#grid-2 {
+display: grid;
+grid-template-columns: repeat(2, 50%);
+column-gap: 10px;
+    row-gap: 30px;
+
+}
+
+#grid-2 div:nth-child(1){
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+#grid-2 div:nth-child(2){
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+#grid-2 div:nth-child(3){
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+#grid-2 div:nth-child(4){
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+
+/* end of size grid */
+/* start of toppings */
+#toppings {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+#grid-3 {
     display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 10px;
-  margin-top: 50px;
-  grid-auto-rows: minmax(100px, auto);
+grid-template-columns: repeat(2, 50%);
+column-gap: 10px;
+    row-gap: 30px;
+
+}
+#grid-3 div:nth-child(1){
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+#grid-3 div:nth-child(2){
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+#grid-3 div:nth-child(3){
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+#grid-3 div:nth-child(4){
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+#grid-3 div:nth-child(5){
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+#grid-3 div:nth-child(6){
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+#grid-3 div:nth-child(7){
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
 }
 
-#crust-section div:nth-child(1){
-    font-size: 25px;
-    align-self: center;
-    justify-self: center;
-    font-size: 30px;
-    
-} 
+#hr {
+    width: 50%;
+    margin: 40px auto;
+    border-radius: 20%;
+}
 
-#crust-section div:nth-child(2){
-    font-size: 25px;
-    align-self: center;
+/* crust start */
+
+#crust {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+#grid-4 {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+
+}
+select {
+    border: 5px solid white;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+#grid-4 select {
     justify-self: center;
-    font-size: 30px;
+    align-self: center;
+}
+/* end of crust */
+/* user start */
+#user {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-} 
+}
+
+.container {
+    margin: 20px auto;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.details input {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
