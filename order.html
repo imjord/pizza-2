@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Order</title>
+</head>
+<body>
+    <nav id="order-nav">
+        <div>
+            <h1>Order Here!</h1>
+        </div>
+        <div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./order.html">Order</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    <hr>
+    <!-- size -->
+    <form method="post"  action="https://www.stonecoldprofessor.com/pizza-order.php">
+        <section id="size-section">
+            <div id="size-header">
+               <h1>Please pick a size!</h1>
+            </div>
+            <div id="small">
+                <label for="size">sm</label>
+                <input name="size" type="radio" value="small"/>
+            </div>
+            <div id="medium">
+                <label for="size">md</label>
+                <input name="size" type="radio" value="medium"/>
+            </div>
+            <div id="large">
+                <label for="size">lg</label>
+                <input name="size" type="radio" value="large"/>
+            </div>
+            <div id="ex-large">
+                <label for="size">extra lg</label>
+                <input name="size" type="radio" value="extra large"/>
+            </div>
+        </section>
+        <!-- toppings -->
+        <section id="topping-section">
+            <div>
+                <h1>Please pick a topping!</h1>
+            </div>
+            <div>
+                <label for="toppings[]">pepperoni</label>
+                <input type="checkbox" name="toppings[]" value="pepperoni"/>
+            </div>
+            <div>
+                <label for="toppings[]">ham</label>
+                <input type="checkbox" name="toppings[]" value="ham"/>
+            </div>
+            <div>
+                <label for="toppings[]">anchovies</label>
+                <input type="checkbox" name="toppings[]" value="anchovies"/>
+            </div>
+            <div>
+                <label for="toppings[]">banana-peppers</label>
+                <input type="checkbox" name="toppings[]" value="banana peppers"/>
+            </div>
+            <div>
+                <label for="toppings[]">chicken</label>
+                <input type="checkbox" name="toppings[]" value="chicken"/>
+            </div>
+            <div>
+                <label for="toppings[]">sasuage</label>
+                <input type="checkbox" name="toppings[]" value="sasuage"/>
+            </div>
+            <div>
+                <label for="toppings[]">onions</label>
+                <input type="checkbox" name="toppings[]" value="onions" />
+            </div>
+            <div>
+                <label for="toppings[]">pineapple</label>
+                <input type="checkbox" name="toppings[]" value="pineapple"/>
+            </div>
+        </section>
+        <section id="crust-section">
+            <div>
+                <label for="crust"> Pick a crust</label>
+            </div>
+            <div>
+                <select name="crust" id="crust">
+                    <option  value="thin">Thin</option>
+                    <option value="pan">pan</option>
+                    <option value="cheese">cheese</option>
+                    <option value="thick">thick</option>
+                </select>
+            </div>
+           
+            
+        </section>
+        <!-- Delivery address (street, city, state, zip)
+Email address
+Phone number
+Message/Comment -->
+<h1>Order Details</h1>
+<section id="first">
+    <div>
+        <h1>first:</h1>
+    </div>
+   <div>
+       <label for="first">first</label>
+       <input type="first" name="first"/>
+   </div>
+   <div>
+    <label for="last">last</label>
+    <input type="last" name="last"/>
+</div>
+</section>
+<section id="address">
+    <div>
+        <h1>Address</h1>
+    </div>
+    <div>
+        <label for="add1">street</label>
+        <input name="add1"/>
+    </div>
+    <div>
+        <label for="add2">street 2</label>
+        <input name="add2"/>
+    </div>
+   <div>
+    <label for="city">city</label>
+    <input name="city"/>
+</div>
+<div>
+    <label for="state">state</label>
+    <input name="state"/>
+</div>
+<div>
+    <label for="zip">zip</label>
+    <input name="zip"/>
+</div>
+
+</section>
+<section id="email">
+    <div>
+        <h1>Email:</h1>
+    </div>
+   <div>
+       <label for="email">email</label>
+       <input type="email" name="email"/>
+   </div>
+</section>
+<section id="number">
+    <div>
+        <h1>number:</h1>
+    </div>
+   <div>
+       <label for="phone">phone</label>
+       <input type="phone" name="phone"/>
+   </div>
+</section>
+<section id="message">
+    <div>
+        <h1>message:</h1>
+    </div>
+   <div>
+       <label for="comments">comments</label>
+       <textarea type="comments" name="comments"></textarea>
+   </div>
+</section>
+<button type="submit">Submit!</button>
+<button type="reset">Clear</button>
+    </form>
+  
+</body>
+</html>
