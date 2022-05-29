@@ -408,3 +408,69 @@ button {
 /* home page */
 /* end home */
 /* about us page */
+
+
+#contact-img {
+  
+  
+   
+ 
+   
+}
+
+#contact-img img {
+    border: 2px solid red;
+    border-radius: 20px;
+ 
+}
+
+.home-bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-bio p {
+    font-size: 30px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#home-img {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-img img {
+    display: flex;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.about-bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+
+.about-bio p {
+    font-size: 30px;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-img img {
+    border: 2px solid red;
+    border-radius: 30px;
+}
