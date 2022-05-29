@@ -61,49 +61,51 @@
             <hr id="hr">
             <div id="grid-3">
                 <div>
-                    <label for="toppings[]">Ham</label>
-                    <input type="checkbox" name="toppings[]" value="Ham"/>
+                    <label for="ham"><img width="100" height="100" src="./assets/ham.png"/>Ham</label>
+                    <input id="ham" type="checkbox" name="toppings[]" value="Ham"/>
                 </div>
                 <div>
-                    <label for="toppings[]">Pepperoni</label>
-                    <input type="checkbox" name="toppings[]" value="Pepperonit"/>
+                    <label for="pepperoni" ><img width="100" height="100" src="./assets/pepperoni.png"/>Pepperoni</label>
+                    <input id="pepperoni" type="checkbox" name="toppings[]" value="Pepperonit"/>
                 </div>
                 <div>
-                    <label for="toppings[]">Sasuage</label>
-                    <input type="checkbox" name="toppings[]" value="Sasuage"/>
+                    <label for="sasuage"><img width="100" height="100" src="./assets/sasuage.png"/>Sasuage</label>
+                    <input id="sasuage"type="checkbox" name="toppings[]" value="Sasuage"/>
                 </div>
                 <div>
-                    <label for="toppings[]">Anchovies</label>
-                    <input type="checkbox" name="toppings[]" value="Anchovies"/>
+                    <label for="anchovies"><img width="100" height="100" src="./assets/anchovies.png"/>Anchovies</label>
+                    
+                    <input id="anchovies" type="checkbox" name="toppings[]" value="Anchovies"/>
                 </div>
                 <div>
-                    <label for="toppings[]">Pineapples</label>
-                    <input type="checkbox" name="toppings[]" value="Pineapple"/>
+                    <label for="pineapple"><img width="100" height="100" src="./assets/pineapple.png"/>Pineapples</label>
+                    <input id="pineapple" type="checkbox" name="toppings[]" value="Pineapple"/>
                 </div>
                 <div>
-                    <label for="toppings[]">Peppers</label>
-                    <input type="checkbox" name="toppings[]" value="Peppers"/>
+                    <label for="pepper"><img width="100" height="100" src="./assets/pepper.png"/>Peppers</label>
+                    <input id="pepper" type="checkbox" name="toppings[]" value="Peppers"/>
                 </div>
                 <div>
-                    <label for="toppings[]">Onions</label>
-                    <input type="checkbox" name="toppings[]" value="Onions"/>
+                    <label for="onion"><img width="100" height="100" src="./assets/onion.png"/>Onions</label>
+                    <input id="onion" type="checkbox" name="toppings[]" value="Onions"/>
                 </div>
             </div>
 
         </div>
         <!-- end of toppings -->
         <!-- crust start -->
-        <div id="crust">
+        <div id="crust-1">
             <div id="grid-1">
                 <h1>Pick Crust</h1>
             </div>
             <hr id="hr">
             <div id="grid-4">
-                <select>
-                    <option value="thin">Thin</option>
-                    <option value="pan">pan</option>
-                    <option value="thick">thick</option>
-                    <option value="cheese">cheese</option>
+                <label for="crust"></label>
+                <select name="crust">
+                    <option id="crust" name="crust" value="thin">Thin</option>
+                    <option id="crust" name="crust" value="pan">pan</option>
+                    <option id="crust" name="crust" value="thick">thick</option>
+                    <option id="crust" name="crust" value="cheese">cheese</option>
                 </select>
             </div>
         </div>
@@ -117,31 +119,83 @@
             <div class="container">
                 <div class="details">
                     <label for="first">First Name: </label>
-                    <input name="first" type="text"/>
+                    <input required name="first" type="text"/>
                 </div>
                 <div class="details">
                     <label for="last">Last Name: </label>
-                    <input name="last" type="text"/>
+                    <input required name="last" type="text"/>
                 </div>
                 <div class="details">
                     <label for="address">Address: </label>
-                    <input name="address" type="text"/>
+                    <input required name="address" type="text"/>
                 </div>
                 <div class="details">
                     <label for="city">City: </label>
-                    <input name="city" type="text"/>
+                    <input required name="city" type="text"/>
                 </div>
                 <div class="details">
                     <label for="state">State: </label>
-                    <input name="state" type="text"/>
+                    <select name="state">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>				
                 </div>
                 <div class="details">
                     <label for="zip">Zip: </label>
-                    <input name="zip" type="number"/>
+                    <input required name="zip" type="number"/>
                 </div>
                 <div class="details">
                     <label for="email">Email: </label>
-                    <input name="email" type="email"/>
+                    <input required name="email" type="email"/>
                 </div>
                 <div class="details">
                     <label for="phone">phone: </label>

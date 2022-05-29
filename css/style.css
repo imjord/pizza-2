@@ -26,7 +26,128 @@ body {
   
 }
 
-#order-nav div:nth-child(1){
+
+#home-nav {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    align-self: center;
+    justify-self: center;
+}
+
+#about-nav {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    align-self: center;
+    justify-self: center;
+}
+
+#contact-nav {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    align-self: center;
+    justify-self: center;
+}
+#about-nav div:last-child ul li a:hover{
+    transform: scale(1.25);
+}
+#contact-nav div:last-child ul li a:hover{
+    transform: scale(1.25);
+}
+#about-nav div:nth-child(1){
+    justify-self: center;
+    align-self: center;
+    font-size: 50px;
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+}
+#about-nav div:last-child{
+    font-family: 'Poppins', sans-serif;
+    justify-self: center;
+    align-self: center;
+    font-weight: 600;
+    text-shadow: 2px 2px rgba(255, 2, 2, 0.445);
+}
+#about-nav div:last-child ul li{
+    list-style-type: none;
+    display: inline-grid;
+}
+
+#about-nav div:last-child ul li a{
+    color: black;
+    font-size: 30px;
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    transition: all 500ms;
+}
+#contact-nav div:nth-child(1){
+    justify-self: center;
+    align-self: center;
+    font-size: 50px;
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+}
+#contact-nav div:last-child{
+    font-family: 'Poppins', sans-serif;
+    justify-self: center;
+    align-self: center;
+    font-weight: 600;
+    text-shadow: 2px 2px rgba(255, 2, 2, 0.445);
+}
+#contact-nav div:last-child ul li{
+    list-style-type: none;
+    display: inline-grid;
+}
+
+#contact-nav div:last-child ul li a{
+    color: black;
+    font-size: 30px;
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    transition: all 500ms;
+}
+#home-nav div:last-child ul li a:hover{
+    transform: scale(1.25);
+}
+#home-nav div:nth-child(1){
+    justify-self: center;
+    align-self: center;
+    font-size: 50px;
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+}
+#home-nav div:last-child{
+    font-family: 'Poppins', sans-serif;
+    justify-self: center;
+    align-self: center;
+    font-weight: 600;
+    text-shadow: 2px 2px rgba(255, 2, 2, 0.445);
+}
+#home-nav div:last-child ul li{
+    list-style-type: none;
+    display: inline-grid;
+}
+
+#home-nav div:last-child ul li a{
+    color: black;
+    font-size: 30px;
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+#order-nav  div:nth-child(1){
     justify-self: center;
     align-self: center;
     font-size: 50px;
@@ -188,7 +309,7 @@ column-gap: 10px;
 
 /* crust start */
 
-#crust {
+#crust-1 {
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -248,3 +369,42 @@ button {
     align-items: center;
     
 }
+
+.details select {
+    font-size: 20px;
+    border-radius: 0;
+    border: none;
+}
+
+/*  contact page */
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    width: 50%;
+    margin: 100px auto;
+}
+
+.contact-form form {
+   
+    padding: 45px;
+   
+    margin: 30px auto;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.contact-form form button {
+    display: inline;
+    margin-left: 50px;
+}
+
+/* end of contact page */
+
+/* home page */
+/* end home */
+/* about us page */
